@@ -1,0 +1,54 @@
+@use "variables" as v;
+
+.photos {
+    display: flex;
+    justify-content: space-evenly;
+    // flex-wrap: wrap; because i dont want the images to toucha and rearange them
+
+
+    .photo {
+        width: 300px;
+        min-height: 250px;
+        // background-color: burlywood;
+
+        &:nth-child(odd) {
+            // background-color: yellowgreen;
+        }
+
+        .image-holder {
+            height: 250px;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .caption {
+
+            padding: 10px 0;
+
+            p {
+                font-size: 10px;
+                font-style: italic;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    .photos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        .photo {}
+    }
+}
