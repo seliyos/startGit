@@ -1,5 +1,3 @@
-@use "variables" as v;
-
 .photos {
     display: flex;
     justify-content: space-evenly;
@@ -32,14 +30,22 @@
             padding: 10px 0;
 
             p {
-                font-size: 10px;
-                font-style: italic;
-            }
-        }
 
+                font-family: 'Dancing Script', cursive;
+                // font-family: "Caveat", serif;
+                // font-weight: 600;
+                font-size: 18px;
+
+            }
+
+
+
+        }
     }
 
 }
+
+
 
 @media screen and (max-width: 940px) {
     .photos {

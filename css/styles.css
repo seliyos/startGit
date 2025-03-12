@@ -33,6 +33,10 @@ p {
   min-height: 100px;
   padding: 20px;
 }
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
 .photos {
   display: flex;
   justify-content: space-evenly;
@@ -53,8 +57,8 @@ p {
   padding: 10px 0;
 }
 .photos .photo .caption p {
-  font-size: 10px;
-  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 940px) {
